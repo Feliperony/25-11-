@@ -7,6 +7,6 @@ import retrofit2.http.Path;
 
 public interface ProjetoAPIService{
 
-    @GET("Divisão")
-    Call<String> exectutar(@Path("valor") String value);
+    @GET("{num1}/{num2}")
+    Call<String> exectutar(@Path("num1") String num1, @Path("num2") String num2);
 }
